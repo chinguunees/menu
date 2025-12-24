@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wholeBody">
+      <div class="header">
+        <h1>Our menu</h1>
+      </div>
+      <div class="category">
+        <button onclick="renderFood()" class="allButton">All</button>
+        <button onclick="category('Breakfast')" class="breakfastButton">
+          Breakfast
+        </button>
+        <button class="lunchButton">Lunch</button>
+        <button class="shakesButton">Shakes</button>
+        <button class="dinnerButton" onclick="category('Dinner')">
+          Dinner
+        </button>
+      </div>
+      <div class="foodsall">
+        <div class="food1">
+          <div>
+            <img class="zurag1food" src="./images/dinner-double.jpg" alt="" />
+          </div>
+          <div class="food1all">
+            <div class="food1name">
+              <p>Dinner Double</p>
+              <p>$13.99</p>
+            </div>
+            <div class="food1info">
+              <p>
+                A satisfying classic made for serious appetites. Sink your teeth
+                into a juicy, perfectly grilled burger stacked with bold flavor,
+                paired with a generous serving of hot, crispy fries. Double
+                Dinner delivers big taste in every bite.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="food1">
+          <div>
+            <img class="zurag1food" src="./images/dinner-double.jpg" alt="" />
+          </div>
+          <div class="food1all">
+            <div class="food1name">
+              <p>Dinner Double</p>
+              <p>$13.99</p>
+            </div>
+            <div class="food1info">
+              <p>
+                A satisfying classic made for serious appetites. Sink your teeth
+                into a juicy, perfectly grilled burger stacked with bold flavor,
+                paired with a generous serving of hot, crispy fries. Double
+                Dinner delivers big taste in every bite.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
