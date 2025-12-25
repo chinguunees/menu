@@ -6,19 +6,29 @@
 body {
   background-color: #222222;
 }
+.background {
+  background-image: url(./images/backgrounds.webp);
+  background-color: rgba(0, 0, 0, 0.92);
+  background-blend-mode: overlay;
+  height: 100%;
+  background-position: center;
+}
 .wholeBody {
   width: 100%;
   margin: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 64px;
 }
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 24px;
   color: white;
 }
 .category {
@@ -37,6 +47,29 @@ button {
   color: #f6f7eb;
   border: none;
 }
+.allButton:hover {
+  background-color: #f6f7eb;
+  color: #444444;
+  font-weight: 700;
+}
+.allButtonNew {
+  background-color: #f6f7eb;
+  color: #444444;
+  font-weight: 700;
+}
+.allButton {
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #444444;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.allButton.active {
+  background: #f6f7eb;
+  color: #444444;
+  border-color: #f6f7eb;
+}
 .foodsall {
   display: flex;
   flex-direction: column;
@@ -54,6 +87,7 @@ button {
   font-weight: 600;
   color: #f6f7eb;
 }
+
 .food1all {
   display: flex;
   flex-direction: column;
@@ -61,6 +95,7 @@ button {
   margin: 32px;
   justify-content: space-evenly;
 }
+
 .food1 {
   display: flex;
   margin-top: 0;
@@ -68,6 +103,37 @@ button {
   background-color: #444444;
   border-radius: 16px;
   width: 700px;
+}
+.food1:hover {
+  background-color: #f6f7eb;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(175, 59, 84, 0.5),
+    0 6px 20px 0 rgba(161, 85, 8, 0.5);
+}
+.food1:hover .food1info {
+  color: #444444;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.food1:hover .food1name {
+  color: #444444;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.food1:hover .zurag1food {
+  border: 1px solid #444444;
+}
+.food1:not(:hover) {
+  transition: 0.3s;
 }
 .zurag1food {
   border-radius: 16px;
@@ -80,4 +146,11 @@ button {
   font-size: 16px;
   color: #f6f7eb;
   font-weight: 300;
+}
+
+.copyrights {
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
 }

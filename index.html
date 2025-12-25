@@ -13,63 +13,71 @@
     />
   </head>
   <body>
-    <div class="wholeBody">
-      <div class="header">
-        <h1>Our menu</h1>
-      </div>
-      <div class="category">
-        <button onclick="renderFood()" class="allButton">All</button>
-        <button onclick="category('Breakfast')" class="breakfastButton">
-          Breakfast
-        </button>
-        <button class="lunchButton">Lunch</button>
-        <button class="shakesButton">Shakes</button>
-        <button class="dinnerButton" onclick="category('Dinner')">
-          Dinner
-        </button>
-      </div>
-      <div class="foodsall">
-        <div class="food1">
-          <div>
-            <img class="zurag1food" src="./images/dinner-double.jpg" alt="" />
-          </div>
-          <div class="food1all">
-            <div class="food1name">
-              <p>Dinner Double</p>
-              <p>$13.99</p>
-            </div>
-            <div class="food1info">
-              <p>
-                A satisfying classic made for serious appetites. Sink your teeth
-                into a juicy, perfectly grilled burger stacked with bold flavor,
-                paired with a generous serving of hot, crispy fries. Double
-                Dinner delivers big taste in every bite.
-              </p>
-            </div>
-          </div>
+    <div class="background">
+      <div class="wholeBody">
+        <div class="header">
+          <h1>ME.N.U</h1>
         </div>
-        <div class="food1">
-          <div>
-            <img class="zurag1food" src="./images/dinner-double.jpg" alt="" />
-          </div>
-          <div class="food1all">
-            <div class="food1name">
-              <p>Dinner Double</p>
-              <p>$13.99</p>
+        <div class="category">
+          <button class="allButton" onclick="filterfood('cat')">All</button>
+          <button id="b2" class="allButton" onclick="filterfood('Breakfast')">
+            Breakfast
+          </button>
+          <button id="b3" class="allButton" onclick="filterfood('Lunch')">
+            Lunch
+          </button>
+          <button id="b4" class="allButton" onclick="filterfood('Shake')">
+            Shakes
+          </button>
+          <button id="b5" class="allButton" onclick="filterfood('Dinner')">
+            Dinner
+          </button>
+        </div>
+        <div class="foodsall">
+          <!-- <div class="food1">
+            <div>
+              <img class="zurag1food" src="./images/dinner-double.jpg" alt="" />
             </div>
-            <div class="food1info">
-              <p>
-                A satisfying classic made for serious appetites. Sink your teeth
-                into a juicy, perfectly grilled burger stacked with bold flavor,
-                paired with a generous serving of hot, crispy fries. Double
-                Dinner delivers big taste in every bite.
-              </p>
+            <div class="food1all">
+              <div class="food1name">
+                <p>Dinner Double</p>
+                <p>$13.99</p>
+              </div>
+              <div class="food1info">
+                <p>
+                  A satisfying classic made for serious appetites. Sink your
+                  teeth into a juicy, perfectly grilled burger stacked with bold
+                  flavor, paired with a generous serving of hot, crispy fries.
+                  Double Dinner delivers big taste in every bite.
+                </p>
+              </div>
             </div>
           </div>
+          <div class="food1">
+            <div>
+              <img class="zurag1food" src="./images/dinner-double.jpg" alt="" />
+            </div>
+            <div class="food1all">
+              <div class="food1name">
+                <p>Dinner Double</p>
+                <p>$13.99</p>
+              </div>
+              <div class="food1info">
+                <p>
+                  A satisfying classic made for serious appetites. Sink your
+                  teeth into a juicy, perfectly grilled burger stacked with bold
+                  flavor, paired with a generous serving of hot, crispy fries.
+                  Double Dinner delivers big taste in every bite.
+                </p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="copyrights">
+          <p>All Rights Reserved by Chinguun</p>
         </div>
       </div>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>

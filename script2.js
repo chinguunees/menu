@@ -1,4 +1,8 @@
 const allButton = document.querySelector(".allButton");
+// const breakfastButton = document.querySelector("#b2");
+// const lunchButton = document.querySelector("#b3");
+// const shakesButton = document.querySelector("#b4");
+// const dinnerButton = document.querySelector("#b5");
 const foodContainer = document.querySelector(".foodsall");
 
 const menus = [
@@ -44,6 +48,12 @@ const menus = [
   },
 ];
 
+// const breakfast = menus.filter((menu) => menu.cat === "Breakfast");
+// const dinner = menus.filter((menu) => menu.cat === "Dinner");
+// const shake = menus.filter((menu) => menu.cat === "Shake");
+// const everything = menus.filter((menu) => menu.price < "100");
+// const lunch = menus.filter((menu) => menu.cat === "Lunch");
+
 const renderFood = (item) => {
   foodContainer.innerHTML = "";
   item.forEach((item) => {
@@ -67,6 +77,8 @@ const renderFood = (item) => {
 };
 
 const filterfood = (filterValue) => {
+  // const breakfast = menus.filter((menu) => menu.cat === "Breakfast");
+  // breakfastButton.innerHTML = `<button class="allButtonNew" onclick="showBreakfast()">Breakfast</button>`
   if (filterValue === "cat") {
     renderFood(menus);
   } else {
@@ -75,3 +87,34 @@ const filterfood = (filterValue) => {
   }
 };
 renderFood(menus);
+
+const showBreakfast = () => {
+  // const breakfast = menus.filter((menu) => menu.cat === "Breakfast");
+  // breakfastButton.innerHTML = `<button class="allButtonNew" onclick="showBreakfast()">Breakfast</button>`
+  renderFood(breakfast);
+};
+
+const showDinner = () => {
+  // const dinner = menus.filter((menu) => menu.cat === "Dinner");
+  // dinnerButton.innerHTML = `<button class="allButtonNew" onclick="showDinner()">Dinner</button>`
+  renderFood(dinner);
+};
+
+const showShake = () => {
+  // const shake = menus.filter((menu) => menu.cat === "Shake");
+  // shakesButton.innerHTML = `<button class="allButtonNew" onclick="showShake()">Shake</button>`
+  renderFood(shake);
+};
+
+const showLunch = () => {
+  // const lunch = menus.filter((menu) => menu.cat === "Lunch");
+  // lunchButton.innerHTML = `<button class="allButtonNew" onclick="showLunch()">Lunch</button>`
+  renderFood(lunch);
+};
+
+const showAll = () => {
+  // const everything = menus.filter((menu) => menu.price < "100");
+  // allButton.innerHTML = `<button class="allButtonNew" onclick="showAll()">All</button>`
+  renderFood(everything);
+};
+renderFood(everything);
